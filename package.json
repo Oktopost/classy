@@ -1,0 +1,30 @@
+{
+  "name": "oktopost-classy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "authors": [
+    {
+      "name": "Alexey Puchkov",
+      "email": "alexey@oktopost.com"
+    }
+  ],
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Oktopost/duct.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
+    "browserify": "^13.3.0"
+  },
+  "dependencies": {
+    "oktopost-plankton": "^0.1.10"
+  }
+}
