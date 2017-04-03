@@ -1,4 +1,10 @@
 'use strict';
 
 
-require('oktopost-space');
+var Classy = require('./src/namespace').Classy;
+
+
+require('./src/Singleton');
+
+
+exports = Classy;
