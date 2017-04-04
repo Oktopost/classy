@@ -25,7 +25,11 @@
     "mocha": "^3.2.0",
     "browserify": "^13.3.0",
     "istanbul": "^0.4.5",
-    "coveralls": "2.10.0"
+    "coveralls": "2.10.0",
+    
+    "gulp": "^3.9.1",
+    "gulp-string-replace": "^0.3.1",
+    "gulp-rename": "^1.2.2"
   },
   "dependencies": {
     "oktopost-namespace": "^1.0.1",

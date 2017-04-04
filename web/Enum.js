@@ -1,9 +1,9 @@
-require('./namespace.js').namespace('Classy', function() { 
+window.Classy.namespace('Classy', function() { 
 	'use strict';
 
 
 	/**
-	 * @class Classy.Enum
+	 * @class Enum
 	 * 
 	 * @property {function(): Array<string>} getAllKeys
 	 * @property {function(): Array<string>} getAllValues
