@@ -1,4 +1,4 @@
-require('./namespace.js').namespace('Classy', () => { 
+require('./namespace.js').namespace('Classy', function() { 
 	'use strict';
 	
 	
@@ -10,19 +10,23 @@ require('./namespace.js').namespace('Classy', () => {
 	 * @return {{instance: function(): T}}
 	 */
 	this.Singleton = function Singleton(target) {
-		target.__instance__ = null;
 		
-		//noinspection JSUndefinedPropertyAssignment
-		target.instance = function() {
-			
-			if (target.__instance__ === null) {	
-				//noinspection JSValidateTypes
-				target.__instance__ = new target();
-			}
-			
-			return target.__instance__;
+		var container = function() {
+			throw 'Can not create instance of singleton';
 		};
 		
-		return target;
+		container.prototype = target.prototype;
+		
+		container.__instance__ = null;
+		container.instance = function() {
+			if (container.__instance__ === null) {
+				//noinspection JSValidateTypes
+				container.__instance__ = new target();
+			}
+			
+			return container.__instance__;
+		};
+		
+		return container;
 	};
 });

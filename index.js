@@ -4,7 +4,9 @@
 var Classy = require('./src/namespace').Classy;
 
 
+require('./src/Enum');
+require('./src/Classify');
 require('./src/Singleton');
 
 
-exports = Classy;
+module.exports = Classy;
