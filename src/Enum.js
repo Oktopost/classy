@@ -29,7 +29,7 @@ require('./namespace.js').namespace('Classy', function() {
 		
 		
 		for (var key in target) {
-			if (target.hasOwnProperty(key)) {
+			if (target.hasOwnProperty(key) && !(target[key] instanceof Object)) {
 				keys.push(key);
 				map[key] = true;
 				
@@ -63,6 +63,8 @@ require('./namespace.js').namespace('Classy', function() {
 					break;
 				}
 			}
-		}
+		};
+		
+		return target;
 	};
 });
