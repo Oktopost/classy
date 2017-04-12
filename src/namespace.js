@@ -4,14 +4,10 @@
 const Namespace = require('oktopost-namespace');
 
 
-var container = {}; 
-var Classy = new Namespace(container);
-
-
-container.Classy = Classy;
+var Classy = new Namespace();
 
 
 module.exports = {
-	Classy: Classy,
-	namespace: Classy.namespace.bind(Classy)
+	Classy: Classy.get('Classy'),
+	namespace: Classy.getCreator()
 };

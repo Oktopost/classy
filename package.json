@@ -1,6 +1,6 @@
 {
   "name": "oktopost-classy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -32,7 +32,7 @@
     "gulp-rename": "^1.2.2"
   },
   "dependencies": {
-    "oktopost-namespace": "^1.0.1",
+    "oktopost-namespace": "^1.2.0",
     "oktopost-plankton": "^0.1.10"
   }
 }

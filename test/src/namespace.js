@@ -10,6 +10,6 @@ const Namespace = require('oktopost-namespace');
 suite('Classy', () => {
 	test('Namespace registered', () => {
 		assert.isObject(Classy);
-		assert.instanceOf(Classy, Namespace);
+		assert.notInstanceOf(Classy, Namespace);
 	});
 });
