@@ -1,12 +1,2 @@
-'use strict';
-
-
-var Classy = require('./src/namespace').Classy;
-
-
-require('./src/Enum');
-require('./src/Classify');
-require('./src/Singleton');
-
-
-module.exports = Classy;
+var root = require('oktopost-namespace').virtual(__dirname);
+module.exports = root.Classy;

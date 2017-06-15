@@ -1,6 +1,3 @@
-'use strict';
-
-
 const Singleton = require('../../index').Singleton;
 const assert = require('chai').assert;
 

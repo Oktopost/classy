@@ -1,9 +1,8 @@
-require('./namespace.js').namespace('Classy', function() { 
-	'use strict';
-
-
+namespace('Classy', function() 
+{
 	/**
 	 * @class Classy.Enum
+	 * @alias Enum
 	 * 
 	 * @property {function(): Array<string>} getAllKeys
 	 * @property {function(): Array<string>} getAllValues
@@ -20,7 +19,8 @@ require('./namespace.js').namespace('Classy', function() {
 	 * @param {T} target
 	 * @return {T}
 	 */
-	this.Enum = function (target) {
+	this.Enum = function (target)
+	{
 		var keys		= [];
 		var values		= [];
 		var map			= {};
@@ -57,13 +57,17 @@ require('./namespace.js').namespace('Classy', function() {
 		target.count = function() { return count; };
 		
 		//noinspection JSUndefinedPropertyAssignment
-		target.forEach = function(callback) {
-			for (var i = 0; i < count; i++) {
-				if (callback(keys[i], values[i]) === false) {
+		target.forEach = function(callback)
+		{
+			for (var i = 0; i < count; i++)
+			{
+				if (callback(keys[i], values[i]) === false)
+				{
 					break;
 				}
 			}
 		};
+		
 		
 		return target;
 	};

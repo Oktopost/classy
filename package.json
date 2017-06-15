@@ -23,16 +23,11 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
-    "browserify": "^13.3.0",
     "istanbul": "^0.4.5",
-    "coveralls": "2.10.0",
-    
-    "gulp": "^3.9.1",
-    "gulp-string-replace": "^0.3.1",
-    "gulp-rename": "^1.2.2"
+    "coveralls": "2.10.0"
   },
   "dependencies": {
-    "oktopost-namespace": "^1.2.0",
-    "oktopost-plankton": "^0.1.10"
+    "oktopost-namespace": "https://github.com/Oktopost/namespace.git#32d6f41",
+    "oktopost-plankton": "https://github.com/Oktopost/plankton.git#4e30d03"
   }
 }

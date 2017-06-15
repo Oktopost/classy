@@ -1,7 +1,5 @@
-require('./namespace.js').namespace('Classy', function() { 
-	'use strict';
-	
-	
+namespace('Classy', function()
+{
 	/**
 	 * @name Classy.classify
 	 * 
