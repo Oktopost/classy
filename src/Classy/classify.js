@@ -1,19 +1,43 @@
-namespace('Classy', function()
+namespace('Classy', function(root)
 {
+	var is = root.Plankton.is;
+	
+	
+	function getProto(target)
+	{
+		if (typeof Object.getPrototypeOf === 'function')
+			return Object.getPrototypeOf(target);
+		
+		if (typeof target.constructor !== 'undefined' && target.constructor.prototype !== 'undefined')
+			return target.constructor.prototype;
+		
+		if (typeof target.__proto__ !== 'undefined')
+			return target.__proto__;
+		
+		return {};
+	}
+	
+	
 	/**
 	 * @name Classy.classify
 	 * 
 	 * @param {*} object
 	 * @param {function()=} init
 	 */
-	this.classify = function classify(object, init) {
-		for (var key in object) {
-			if (typeof object[key] === 'function') {
-				object[key] = object[key].bind(object);
+	this.classify = function classify(object, init)
+	{
+		var proto = getProto(object);
+		
+		for (var key in proto)
+		{
+			if (typeof proto[key] === 'function')
+			{
+				object[key] = proto[key].bind(object);
 			}
 		}
 		
-		if (typeof init !== 'undefined') {
+		if (typeof init !== 'undefined')
+		{
 			init.call(object);
 		}
 		

@@ -1,1 +1,1 @@
-module.exports = require('oktopost-namespace').dynamic(__dirname + '/..').Classy;
+module.exports = require('oktopost-namespace').dynamic(__dirname + '/..');

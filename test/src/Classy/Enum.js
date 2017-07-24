@@ -1,4 +1,4 @@
-const Enum = require('../../index').Enum;
+const Enum = require('../../index').Classy.Enum;
 const assert = require('chai').assert;
 
 

@@ -28,8 +28,10 @@ namespace('Classy', function()
 		var count		= 0;
 		
 		
-		for (var key in target) {
-			if (target.hasOwnProperty(key) && !(target[key] instanceof Object)) {
+		for (var key in target)
+		{
+			if (target.hasOwnProperty(key) && !(target[key] instanceof Object))
+			{
 				keys.push(key);
 				map[key] = true;
 				

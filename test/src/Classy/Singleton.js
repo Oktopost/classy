@@ -1,4 +1,4 @@
-const Singleton = require('../../index').Singleton;
+const Singleton = require('../../index').Classy.Singleton;
 const assert = require('chai').assert;
 
 
