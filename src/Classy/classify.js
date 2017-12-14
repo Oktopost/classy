@@ -1,8 +1,5 @@
 namespace('Classy', function(root)
 {
-	var is = root.Plankton.is;
-	
-	
 	function getProto(target)
 	{
 		if (typeof Object.getPrototypeOf === 'function')
